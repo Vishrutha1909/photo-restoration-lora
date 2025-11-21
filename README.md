@@ -20,6 +20,10 @@ We evaluate the performance of our restoration system using both quantitative an
 
 The final objective of this project is to build a practical and easy to use model that can restore old photos with high quality results, giving users a way to preserve valuable memories without the high cost or time required for manual restoration.
 
+# Notebook Links
+
+https://colab.research.google.com/drive/16zK69ifQ8g_WIXN388HB7G2EEgB2TLi-?usp=sharing
+
 # Links to datasets
 https://www.kaggle.com/datasets/bharatadhikari/humanface8000
 
