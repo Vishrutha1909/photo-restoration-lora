@@ -4,7 +4,9 @@ AI project to restore damaged photographs using LoRA fine-tuned diffusion models
 
 # Team Members 
 Akshara Y Tarikere - Github Username: 
+
 Anshu Reddy Ashanna - Github Username: AnshuReddyAshanna
+
 Vishrutha Ravi - Github Username: Vishrutha1909
 
 # Project Summary
