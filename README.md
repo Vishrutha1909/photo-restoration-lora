@@ -24,6 +24,8 @@ The final objective of this project is to build a practical and easy to use mode
 
 https://colab.research.google.com/drive/16zK69ifQ8g_WIXN388HB7G2EEgB2TLi-?usp=sharing
 
+https://colab.research.google.com/drive/1LCnyFeI6fOS5Lfwu5DRsZRWtT5Cldhqk?usp=sharing
+
 # Links to datasets
 https://www.kaggle.com/datasets/bharatadhikari/humanface8000
 
