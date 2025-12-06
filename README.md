@@ -26,6 +26,42 @@ Vishrutha Ravi : https://drive.google.com/drive/folders/1bg7aNY4oXFHML9ftcPs0fFe
 
 Anshu Reddy Ashanna : https://drive.google.com/drive/folders/1C7zpzlm54kThb-iFJ97yzmDUtZkqNFLy?usp=sharing
 
+## Folder Structure
+
+```
+Photo-Restoration-LoRA/
+│
+├── Dataset/
+│   ├── raw Images/
+│   └── damaged images/
+│
+├── metrics/
+│   ├── psnr_scores.csv
+│   └── ssim_scores.csv
+│
+├── notebooks/
+│   ├── Photo_Restoration_LoRA_Vishrutha.ipynb
+│   ├── Preprocessing.ipynb
+│   ├── damage_images.ipynb
+│   ├── photo_restoration_lora_preprocessing.ipynb
+│   └── training_and_eval_notebook_1.ipynb
+│
+├── plots/
+│   ├── Distribution of PSNR Improvement.png
+│   ├── PSNR Comparison.png
+│   ├── PSNR Distribution Comparison.png
+│   └── SSIM Comparison.png
+│
+├── results/
+│   ├── Final Restored (LoRA).png
+│   └── Restored (LoRA).png
+│
+├── .gitignore
+├── Project Deliverable 1.pdf
+├── README.md
+└── requirements.txt
+```
+
 # Links to datasets
 https://www.kaggle.com/datasets/bharatadhikari/humanface8000
 
