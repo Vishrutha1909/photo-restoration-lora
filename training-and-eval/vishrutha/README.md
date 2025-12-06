@@ -20,6 +20,7 @@ Instead of full fine-tuning, Low-Rank Adaptation (LoRA) is used to efficiently t
 
 ## Folder Structure
 
+```
 vishrutha/
 │
 ├── metrics/
@@ -28,7 +29,7 @@ vishrutha/
 │
 ├── notebooks/
 │   ├── Photo_Restoration_LoRA_Final_Vishrutha.ipynb
-│   └── training_and_eval_notebook.ipynb
+│   └── training_and_eval_notebook1.ipynb
 │
 ├── plots/
 │   ├── Distribution of PSNR Improvement.png
@@ -42,6 +43,8 @@ vishrutha/
 │
 ├── README.md
 └── requirements.txt
+```
+
 
 
 ## Methodology
@@ -52,7 +55,7 @@ Base Model: runwayml/stable-diffusion-inpainting
 
 LoRA is attached to the UNet attention layers:
 
-to_q, to_k, to_v, to_out.0
+- to_q, to_k, to_v, to_out.0
 
 Only LoRA weights are trained → memory-efficient fine-tuning
 
@@ -60,45 +63,47 @@ Only LoRA weights are trained → memory-efficient fine-tuning
 
 A pre-aligned dataset of:
 
-Clean images
+- Clean images
 
-Damaged images
+- Damaged images
 
-Corresponding binary masks
+- Corresponding binary masks
 
-Total training samples: 109 aligned triplets
+- Total training samples: 109 aligned triplets
 
-## No separate synthetic damage pipeline was created. Pre-existing aligned data was directly used for training and evaluation.
+- No separate synthetic damage pipeline was created. Pre-existing aligned data was directly used for training and evaluation.
 
 3. Training
 
-Latent-space training using VAE encodings
+- LoRA loaded into FP32 for training
 
-Noise injected using DDPMScheduler
+- Latent-space training using VAE encodings
 
-Mask-weighted MSE loss to focus restoration only on damaged regions
+- Noise injected using DDPMScheduler
 
-Optimizer: AdamW
+- Mask-weighted MSE loss to focus restoration only on damaged regions
 
-Learning rate: 1e-5
+- Optimizer: AdamW
 
-Epochs: 5
+- Learning rate: 1e-5
+
+- Epochs: 5
 
 4. Inference
 
-LoRA weights loaded into FP16 Stable Diffusion
+- LoRA weights loaded into FP16 Stable Diffusion
 
-Automatic mask generation during testing using OpenCV:
+- Automatic mask generation during testing using OpenCV:
 
-Black-hat filtering
+- Black-hat filtering
 
-Adaptive thresholding
+- Adaptive thresholding
 
-Morphological filtering
+- Morphological filtering
 
-Gaussian feathering
+- Gaussian feathering
 
-Mask-guided inpainting applied during inference
+- Mask-guided inpainting applied during inference
 
 ## Evaluation Metrics
 
@@ -114,17 +119,6 @@ metrics/psnr_scores.csv
 
 metrics/ssim_scores.csv
 
-## Visualizations available in plots folder
-
-## Visual Results 
-
-Visual evaluation confirms:
-
-Effective removal of cracks and paint damage
-
-Strong preservation of facial identity and lighting
-
-Minimal over-smearing or repainting artifacts
 
 ## Final visual results are saved in:
 
@@ -147,37 +141,37 @@ Demonstrated that LoRA fine-tuning is effective for restoration with very limite
 
 ## Successfully applied:
 
-Mask-guided latent diffusion training
+- Mask-guided latent diffusion training
 
-Automatic crack-based inference masking
+- Automatic crack-based inference masking
 
-Achieved consistent improvement across 50 samples
+- Achieved consistent improvement across 50 samples
 
 ## Limitations
 
-Small dataset (109 samples) limits generalization
+- Small dataset (109 samples) limits generalization
 
-Modest numeric gains in PSNR and SSIM
+- Modest numeric gains in PSNR and SSIM
 
-No multi-condition training (folds, tears, blur, noise)
+- No multi-condition training (folds, tears, blur, noise)
 
-Limited training epochs due to GPU constraints
+- Limited training epochs due to GPU constraints
 
 ## Future Work
 
-Expand training dataset.
+- Expand training dataset.
 
-Train multi-condition LoRA for:
+- Train multi-condition LoRA for:
 
-Tears
+- Tears
 
-Folds
+- Folds
 
-Motion blur
+- Motion blur
 
-Severe occlusion
+- Severe occlusion
 
-Extend training to higher resolutions
+- Extend training to higher resolutions
 
 
 ## Author
