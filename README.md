@@ -22,9 +22,9 @@ The final objective of this project is to build a practical and easy to use mode
 
 # Dataset and weights Google Drive Link
 
-https://drive.google.com/drive/folders/1bg7aNY4oXFHML9ftcPs0fFeGRfVwS4-G?usp=sharing
+Vishrutha Ravi : https://drive.google.com/drive/folders/1bg7aNY4oXFHML9ftcPs0fFeGRfVwS4-G?usp=sharing
 
-https://drive.google.com/drive/folders/1C7zpzlm54kThb-iFJ97yzmDUtZkqNFLy?usp=sharing
+Anshu Reddy Ashanna : https://drive.google.com/drive/folders/1C7zpzlm54kThb-iFJ97yzmDUtZkqNFLy?usp=sharing
 
 # Notebook Links
 
