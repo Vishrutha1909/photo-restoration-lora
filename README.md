@@ -26,7 +26,7 @@ Vishrutha Ravi : https://drive.google.com/drive/folders/1bg7aNY4oXFHML9ftcPs0fFe
 
 Anshu Reddy Ashanna : https://drive.google.com/drive/folders/1C7zpzlm54kThb-iFJ97yzmDUtZkqNFLy?usp=sharing
 
-## Folder Structure
+# Folder Structure
 
 ```
 Photo-Restoration-LoRA/
