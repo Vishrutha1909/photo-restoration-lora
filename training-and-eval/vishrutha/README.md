@@ -18,6 +18,10 @@ Instead of full fine-tuning, Low-Rank Adaptation (LoRA) is used to efficiently t
 
 6.Fully reproducible with requirements.txt
 
+## Dataset and weights Google Drive Link
+
+https://drive.google.com/drive/folders/1bg7aNY4oXFHML9ftcPs0fFeGRfVwS4-G?usp=sharing
+
 ## Folder Structure
 
 ```
