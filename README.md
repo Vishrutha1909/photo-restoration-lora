@@ -1,4 +1,4 @@
-# photo-restoration-lora
+# Photo Restoration using LoRA Fine-Tuned Diffusion Model
 AI project to restore damaged photographs using LoRA fine-tuned diffusion models.
 
 # Team Members 
