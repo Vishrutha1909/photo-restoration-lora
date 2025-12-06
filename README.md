@@ -26,10 +26,6 @@ Vishrutha Ravi : https://drive.google.com/drive/folders/1bg7aNY4oXFHML9ftcPs0fFe
 
 Anshu Reddy Ashanna : https://drive.google.com/drive/folders/1C7zpzlm54kThb-iFJ97yzmDUtZkqNFLy?usp=sharing
 
-# Notebook Links
-
-Vishrutha Ravi : Photo_Restoration_LoRA_Final_Vishrutha.ipynb :- https://colab.research.google.com/drive/1VstdzuNDMmL8oP2jsbo7PPsvdPt_u9Dp?usp=sharing
-
 # Links to datasets
 https://www.kaggle.com/datasets/bharatadhikari/humanface8000
 
