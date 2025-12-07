@@ -41,11 +41,11 @@ Photo-Restoration-LoRA/
 │   └── ssim_scores.csv
 │
 ├── notebooks/
-│   ├── Photo_Restoration_LoRA_Vishrutha.ipynb
+│   ├── Photo_Restoration_LoRA_Approach_1_Vishrutha.ipynb
 │   ├── Preprocessing.ipynb
 │   ├── damage_images.ipynb
 │   ├── photo_restoration_lora_preprocessing.ipynb
-│   └── training_and_eval_notebook_1.ipynb
+│
 │
 ├── plots/
 │   ├── Distribution of PSNR Improvement.png
