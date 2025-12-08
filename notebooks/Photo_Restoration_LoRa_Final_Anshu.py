@@ -223,8 +223,9 @@ for fname in tqdm(sorted(os.listdir(CLEAN_DIR))):
         print("Failed:", in_path, e)
 print("Synthetic damaged dataset created.")
 
+"""# **4. Generating Masks**"""
 
-# Auto-generate damage masks from SYN_DAM_DIR
+# Auto-generate masks from Damaged Images
 def generate_damage_mask(img_pil: Image.Image) -> np.ndarray:
     img = np.array(img_pil)
     lab = cv2.cvtColor(img, cv2.COLOR_RGB2LAB)
@@ -262,12 +263,12 @@ def batch_create_masks(src_dir: Path, mask_out_dir: Path):
         mask_pil = Image.fromarray(mask_np).convert("L")
         mask_pil.save(mask_out_dir / Path(fname).with_suffix(".png").name, format="PNG")
 
-print("Generating masks for synthetic damaged images...")
-SYN_DAM_DIR = Path(SYN_DAM_DIR)
+print("Generating masks for damaged images...")
+DAMAGED_DIR = Path(DAMAGED_DIR)
 MASK_DIR = Path(MASK_DIR)
-batch_create_masks(SYN_DAM_DIR, MASK_DIR)
+batch_create_masks(DAMAGED_DIR, MASK_DIR)
 
-"""# **4.Training Diffusion Model using LoRa**"""
+"""# **5.Training Diffusion Model using LoRa**"""
 
 from diffusers.utils.import_utils import USE_SAFETENSORS
 from diffusers import StableDiffusionInpaintPipeline, DDPMScheduler
@@ -482,7 +483,7 @@ pipe.enable_attention_slicing()
 
 print("Trained LoRA loaded for testing")
 
-"""# **Visualizations**"""
+"""# **6.Visualizations**"""
 
 # Damaged → Mask → Restored → Clean
 import matplotlib.pyplot as plt
@@ -710,7 +711,7 @@ plt.axis("off")
 plt.tight_layout()
 plt.show()
 
-"""# **Evaluation**"""
+"""# **7.Evaluation**"""
 
 !pip install -q scikit-image
 
